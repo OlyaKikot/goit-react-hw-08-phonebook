@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  margin-right: 5px;
+}
+.name {
+  font-weight: 700;
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+.button {
+  display: inline-block;
+  font-size: 20px;
+  background-color: rgb(114, 107, 97);
+  color: aliceblue;
+  border: none;
+  margin-left: auto;
+  margin-right: 50px;
+  padding: 8px;
+  border-radius: 3px;
+  transition-timing-function: linear;
+}
+.button:hover {
+  background-color: rgb(88, 79, 70);
+  box-shadow: 0 0 10px rgba(54, 52, 49, 0.3);
+}

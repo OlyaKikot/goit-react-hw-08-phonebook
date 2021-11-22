@@ -1,0 +1,12 @@
+.link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 700;
+  color: #2a363b;
+  font-size: 22px;
+}
+.navigationActive {
+  color: rgb(114, 107, 97);
+  border-bottom: solid 4px rgb(114, 107, 97);
+}
