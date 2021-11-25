@@ -24,6 +24,9 @@ export default function RegisterView() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (name === "" || email === "" || password === "") {
+      return alert("no text");
+    }
     dispatch(operations.register({ name, email, password }));
     setName("");
     setEmail("");
@@ -42,6 +45,8 @@ export default function RegisterView() {
             type="text"
             name="name"
             value={name}
+            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+            title="Имя может состоять только из букв, апострофа, тире и пробелов. Например Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan и т. п."
             onChange={handleChange}
           />
         </label>
